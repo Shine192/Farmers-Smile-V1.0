@@ -1,0 +1,114 @@
+[
+  {
+    "id": "soybean",
+    "name": "Soybean",
+    "thai": "ถั่วเหลือง",
+    "emoji": "🫘",
+    "days": 135,
+    "water": [
+      450,
+      700
+    ],
+    "temp": [
+      20,
+      33
+    ],
+    "absolute": [
+      10,
+      38
+    ],
+    "drought": "low-medium",
+    "ecoId": 1150,
+    "notes": "Choose a variety suited to local day length. Check that water can drain away."
+  },
+  {
+    "id": "groundnut",
+    "name": "Groundnut",
+    "thai": "ถั่วลิสง",
+    "emoji": "🥜",
+    "days": 130,
+    "water": [
+      500,
+      700
+    ],
+    "temp": [
+      22,
+      32
+    ],
+    "absolute": [
+      10,
+      45
+    ],
+    "drought": "low-medium",
+    "ecoId": 2199,
+    "notes": "Needs well-drained ground. Avoid fields where water collects."
+  },
+  {
+    "id": "maize",
+    "name": "Maize",
+    "thai": "ข้าวโพดเลี้ยงสัตว์",
+    "emoji": "🌽",
+    "days": 125,
+    "water": [
+      500,
+      800
+    ],
+    "temp": [
+      18,
+      33
+    ],
+    "absolute": [
+      10,
+      47
+    ],
+    "drought": "medium-high",
+    "ecoId": 2175,
+    "notes": "Keep a water backup for flowering. This guide is for grain maize, not sweet corn."
+  },
+  {
+    "id": "strawberry",
+    "name": "Strawberry",
+    "thai": "สตรอว์เบอร์รี",
+    "emoji": "🍓",
+    "days": 240,
+    "water": [
+      395,
+      592
+    ],
+    "temp": [
+      11,
+      24
+    ],
+    "absolute": [
+      6,
+      28
+    ],
+    "drought": "medium",
+    "ecoId": 1112,
+    "elevationMin": 1000,
+    "notes": "Needs mild weather; FAO notes tropical production succeeds above 1,000 m. This reference weather point is lower. Check your exact farm elevation, variety, chilling needs, drainage, and irrigation. The water guide is a rough duration-scaled annual range, not a local field recommendation."
+  },
+  {
+    "id": "coffee",
+    "name": "Arabica coffee",
+    "thai": "กาแฟอาราบิก้า",
+    "emoji": "☕",
+    "days": 330,
+    "water": [
+      1266,
+      2082
+    ],
+    "temp": [
+      14,
+      28
+    ],
+    "absolute": [
+      10,
+      34
+    ],
+    "drought": "high",
+    "ecoId": 749,
+    "elevationMin": 1000,
+    "notes": "A long-term tree crop, not a one-season harvest. Site, variety, shade, soil, water through establishment, flowering, and processing access matter. FAO guidance prefers elevations above 1,000 m; this reference point is lower. The water guide is a rough duration-scaled annual range, not a local field recommendation."
+  }
+]

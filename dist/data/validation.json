@@ -1,0 +1,52 @@
+{
+  "dataChecks": {
+    "id": "chiang-mai-valley",
+    "location": "Chiang Mai valley",
+    "latitude": 18.79,
+    "longitude": 98.98,
+    "gridElevationM": 759.08,
+    "start": "1996-01-01",
+    "end": "2025-12-31",
+    "years": 30,
+    "dailyRecords": 10958,
+    "missingValues": 0,
+    "trainingMonths": 360,
+    "sourceURL": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CPRECTOTCORR&community=AG&longitude=98.98&latitude=18.79&start=19960101&end=20251231&format=JSON",
+    "rawSHA256": "8f189e4744c8abce107c7dc81c36f52633bd4c10a0703344280f964bbe2926e8",
+    "source": "NASA POWER / MERRA-2",
+    "retrieved": "2026-09-23",
+    "planningYear": 2027,
+    "scope": "One coarse grid reference, not farm-level measurements or mountain microclimates."
+  },
+  "forecastEvaluation": {
+    "temp": {
+      "selected": "mean",
+      "selection_MAE_2016_2020": {
+        "mean": 0.7430598676962499,
+        "ridge": 0.7793703438874179
+      },
+      "holdout_MAE_2021_2025": {
+        "mean": 0.7399287992945326,
+        "ridge": 0.7804677605639093
+      },
+      "unit": "C"
+    },
+    "rain": {
+      "selected": "mean",
+      "selection_MAE_2016_2020": {
+        "mean": 41.467483673033044,
+        "ridge": 42.14610186471585
+      },
+      "holdout_MAE_2021_2025": {
+        "mean": 42.71636088217338,
+        "ridge": 43.93653807723121
+      },
+      "unit": "mm/month"
+    }
+  },
+  "method": "Monthly ridge regression vs monthly mean. Lambda=100 fixed. Expanding-window two-year-ahead predictions. Model choice on 2016-2020 only; subsequent 2021-2025 comparison is an evaluation, not a new selection step. Final models refit through 2025. Crop ranking has no field outcome validation.",
+  "modelJSONBytes": 279253,
+  "coefficientBytes": 1441,
+  "analogModelBytes": 237932,
+  "analogWindows": 1771
+}

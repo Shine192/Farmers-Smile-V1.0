@@ -1,0 +1,55 @@
+{
+  "dataChecks": {
+    "id": "bang-klam",
+    "location": "Bang Klam district reference",
+    "latitude": 7.08953,
+    "longitude": 100.41075,
+    "gridElevationM": 53.67,
+    "region": "south",
+    "start": "1996-01-01",
+    "end": "2025-12-31",
+    "years": 30,
+    "dailyRecords": 10958,
+    "missingValues": 0,
+    "trainingMonths": 360,
+    "sourceURL": "https://power.larc.nasa.gov/api/temporal/daily/point?parameters=T2M%2CT2M_MAX%2CPRECTOTCORR&community=AG&longitude=100.5951&latitude=7.1896&start=19960101&end=20251231&format=JSON",
+    "rawSHA256": "3b9fdd17b31793ee2dd757a658a4f28261922a066e903055e6a11340affb7e21",
+    "source": "NASA POWER / MERRA-2",
+    "retrieved": "2026-09-23",
+    "planningYear": 2027,
+    "scope": "Crop comparison uses the nearby coarse NASA POWER grid recorded by weatherGridLatitude/Longitude; the marker shows a reference point in this district, not farm-level measurements.",
+    "weatherGridLatitude": 7.1896,
+    "weatherGridLongitude": 100.5951
+  },
+  "forecastEvaluation": {
+    "temp": {
+      "selected": "ridge",
+      "selection_MAE_2016_2020": {
+        "mean": 0.43864118678365877,
+        "ridge": 0.32831832231644265
+      },
+      "holdout_MAE_2021_2025": {
+        "mean": 0.44296701058540205,
+        "ridge": 0.3545692186993576
+      },
+      "unit": "C"
+    },
+    "rain": {
+      "selected": "mean",
+      "selection_MAE_2016_2020": {
+        "mean": 71.50428901841231,
+        "ridge": 72.50413288341795
+      },
+      "holdout_MAE_2021_2025": {
+        "mean": 69.37915823938407,
+        "ridge": 65.16639229476581
+      },
+      "unit": "mm/month"
+    }
+  },
+  "method": "Monthly ridge regression vs monthly mean. Lambda=100 fixed. Expanding-window two-year-ahead predictions. Model choice on 2016-2020 only; subsequent 2021-2025 comparison is an evaluation, not a new selection step. Final models refit through 2025. Crop ranking has no field outcome validation.",
+  "modelJSONBytes": 421154,
+  "coefficientBytes": 1622,
+  "analogModelBytes": 378502,
+  "analogWindows": 2818
+}
