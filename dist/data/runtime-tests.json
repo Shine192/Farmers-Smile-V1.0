@@ -3,8 +3,8 @@
   "areas": 3,
   "dailyRecordsPerArea": 10958,
   "combinationsPassed": 72,
-  "medianCalculationMs": 3.5117099999999937,
-  "p95CalculationMs": 5.442046000000005,
+  "medianCalculationMs": 3.628896999999995,
+  "p95CalculationMs": 7.108473000000004,
   "offlineHTMLBytes": 4190157,
   "offlinePolicy": "Prepared model and crop comparisons embedded. Thailand province boundaries are local; map tiles are not requested.",
   "uiQA": "See browser QA notes in README."

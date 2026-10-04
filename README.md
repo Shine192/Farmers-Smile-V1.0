@@ -22,6 +22,14 @@ Run `npm test` to check all 72 province, month, and water combinations and offli
 
 **Team:** Shine — product, research, and AI-assisted prototype development; Chan and Muay — report, narration, and presentation; James — demo video editing. AI tools assisted development; crop results run locally through historical matching and explicit screening rules.
 
+## Submission files in this repository
+
+- **Source code and backup ZIP:** `dist/` contains the runnable mobile web app; `dist/Farmers-Smile-Project.zip` is a downloadable backup of the complete project. `scripts/` contains the data preparation, map preparation, packaging, and test scripts.
+- **Dataset:** `dist/data/README.txt` explains the raw NASA POWER responses, processed weather tables, crop assumptions, model files, map boundaries, and validation records in `dist/data/`. This directory is organized by province reference rather than duplicating files in separate raw and processed directories.
+- **Dependencies:** `package.json` and `package-lock.json` pin the Vite development dependency. `requirements.txt` documents that the Python scripts use no third-party packages.
+
+The project ZIP includes the small prepared datasets needed to rebuild and explain this prototype. It contains no large external model weights. The only inference at runtime is the bundled historical matcher and explicit crop screening rules; see below for their limits.
+
 ## Start here — no coding required
 
 On the first visit, a short optional tour explains the flow. Choose **Show me** to follow it, or skip it. You can replay it later from the **i** help button. The guide is available in Thai and English, and does not add permanent map controls.

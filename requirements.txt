@@ -1,0 +1,2 @@
+# Python 3 standard library only; no pip packages are required.
+# For the optional Vite development server, use `npm ci` with package-lock.json.

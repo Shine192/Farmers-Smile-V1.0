@@ -17,6 +17,6 @@ with zipfile.ZipFile(dist/'Farmers-Smile-Project.zip','w',zipfile.ZIP_DEFLATED) 
  for p in sorted(root.rglob('*')):
   rel=p.relative_to(root)
   if not p.is_file() or any(part.startswith('.') or part=='__pycache__' for part in rel.parts) or p.suffix in ('.zip','.pyc'):continue
-  if rel.parts[0] not in ('dist','scripts') and str(rel) not in ('README.md','SOURCES.md','package.json','package-lock.json','vite.config.js'):continue
+  if rel.parts[0] not in ('dist','scripts') and str(rel) not in ('README.md','SOURCES.md','requirements.txt','package.json','package-lock.json','vite.config.js'):continue
   z.write(p,str(rel))
 print('Offline HTML:',(dist/'offline.html').stat().st_size,'bytes; project ZIP:',(dist/'Farmers-Smile-Project.zip').stat().st_size,'bytes')
